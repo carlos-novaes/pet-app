@@ -1,8 +1,7 @@
 import React from 'react';
-import Card from './Card';
 import Cardlist from './Cardlist';
 
-function Home() {
+function Marketplace() {
   return (
     <div>
       <div className='Grid'>        
@@ -12,4 +11,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Marketplace;

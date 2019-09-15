@@ -16,11 +16,14 @@ export default function Navbar() {
             <NavLink to='/About'>Sobre nós</NavLink>
           </li>
           <li>
-            <NavLink to='/Payment'>Pagamento</NavLink>
+            <NavLink to='/Marketplace'>Marketplace</NavLink>
           </li>
           <li>
-            <NavLink to='/Apolices'>Apólices Vendidas</NavLink>
+            <NavLink className='formanagement' to='/Apolices'>Apólices Vendidas</NavLink>
           </li>
+          <li>
+            <NavLink className='formanagement' to='/Payment'>Contratação</NavLink>
+          </li>          
         </ul>
       </nav>
     </div>

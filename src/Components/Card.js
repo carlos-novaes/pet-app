@@ -1,29 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Card = () => {
+const Card = (props) => {
+  console.log(props);
   return (
     <div>
       <h2>Assistencia Pet Help</h2>
       <h3>
-        Ajudamos você a cuidar do seu animalzinho garantindo benefícios,
-        tranquilidade e conforto.
+        {props.description}
       </h3>
-      <strong>
-        <p>Serviços atendidos:</p>
-        <ul>
-          <li>Transport veterinário emergencial</li>
-          <li>Assistencia veterinária emergencial</li>
-          <li>Agendamento e consultas veterinárias</li>
-          <li>Informações sobre vacinas e aplicação em domicílio</li>
-          <li>Envio de ração e etc.</li>
-        </ul>
-      </strong>
-
-      <h1>35,90</h1>
-
+      <h1>{props.price}</h1>
       <NavLink className='contratar' to='/Payment'>
         Contratar
+      </NavLink>
+      <NavLink className='sabermais' to='/Payment'>
+        Saiba Mais
       </NavLink>
     </div>
   );
