@@ -19,6 +19,9 @@ export default function Navbar() {
             <NavLink to='/Marketplace'>Marketplace</NavLink>
           </li>
           <li>
+            <NavLink className='formanagement' to='/MediaCard'>Material de Apoio</NavLink>
+          </li>
+          <li>
             <NavLink className='formanagement' to='/Apolices'>Apólices Vendidas</NavLink>
           </li>
           <li>

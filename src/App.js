@@ -7,6 +7,8 @@ import Navbar from './Components/Navbar';
 import Payment from './Components/Payment';
 import Apolices from './Components/Apolices';
 import Marketplace from './Components/Marketplace';
+import MediaCard from './Components/MediaCard';
+import Signature from './Components/Signature';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/Marketplace' component={Marketplace} />
         <Route path='/payment' component={Payment} />
         <Route path='/apolices' component={Apolices} />
+        <Route path='/mediacard' component={MediaCard}/>
+        <Route path='/Signature' component={Signature}/>
       </Switch>
     </BrowserRouter>
   );

@@ -26,7 +26,7 @@ class Apolices extends Component {
   render() {
     return (
       <div>
-        <h1>Banco de apólices</h1>
+        <h1>Relação de Apólices</h1>
         <table>
           <th>Nome</th>
           <th>ID</th>

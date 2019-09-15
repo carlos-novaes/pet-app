@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Payment() {
   return (
@@ -147,7 +148,7 @@ export default function Payment() {
                 </div>
               </div>
             </div>
-            <input type='submit' value='Contratar' className='btn' />
+            <NavLink className='contratar' to='/Signature'>Contratar</NavLink>
           </form>
         </div>
         <div>
