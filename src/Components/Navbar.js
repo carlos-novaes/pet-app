@@ -18,6 +18,9 @@ export default function Navbar() {
           <li>
             <NavLink to='/Payment'>Pagamento</NavLink>
           </li>
+          <li>
+            <NavLink to='/Apolices'>Apólices Vendidas</NavLink>
+          </li>
         </ul>
       </nav>
     </div>

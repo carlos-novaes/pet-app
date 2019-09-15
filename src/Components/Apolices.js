@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class ApolicesVendidas extends Component {
+class Apolices extends Component {
   state = {
     data: []
   };
@@ -26,11 +26,22 @@ class ApolicesVendidas extends Component {
   render() {
     return (
       <div>
-        {this.state.data.map(policie => (
-          <li>{policie.Id}</li>
-        ))}
+        <h1>Banco de apólices</h1>
+        <table>
+          <th>Nome</th>
+          <th>ID</th>
+          <th>Status</th>
+
+          {this.state.data.map(policie => (
+            <tr>
+              <td>{policie.Customer.Name}</td>
+              <td>{policie.Id}</td>
+              <td>{policie.Status}</td>
+            </tr>
+          ))}
+        </table>
       </div>
     );
   }
 }
-export default ApolicesVendidas;
+export default Apolices;
