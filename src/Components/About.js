@@ -5,16 +5,16 @@ const About = () => {
     <div className='about'>
       <h2>Sobre nós</h2>
 
+          
       <p>
-        PETSEG é uma corretora de assistência e planos de saúde para caes e
+        Somos uma corretora especializada em assistências e planos de saúde para cães e
         gatos que disponibiliza uma solução totalmente digital na
-        comercialização destes serviços. Buscamos parcerias com lojas de
-        Petshops que agem como agentes que aproximam o serviço de assistência e
-        planos de saúde aos donos de caes e gatos, através da nossa plataforma
+        comercialização destes serviços através da nossa plataforma
         online.
       </p>
-      <hr></hr>
-    </div>
+         
+      </div>
+    
   );
 };
 
