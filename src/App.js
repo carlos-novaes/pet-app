@@ -14,7 +14,8 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Switch>        
+      <Switch>       
+        <Route exact path='/' component={Home} /> 
         <Route path='/about' component={About} />
         <Route path='/Marketplace' component={Marketplace} />
         <Route path='/payment' component={Payment} />
