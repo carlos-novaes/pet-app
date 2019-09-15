@@ -2,123 +2,127 @@ import React from 'react';
 
 export default function Payment() {
   return (
-    // <div className='container'>
-    //   <form>
-    //     <h3>Billing Address</h3>
-    //     <input />
-    //   </form>
-    // </div>
     <div className='row'>
-      <div className='col-75'>
         <div className='container'>
-          <form action='/action_page.php'>
-            <div className='row'>
+          <form action='/action_page.php'>           
               <div className='col-50'>
-                <h3>Billing Address</h3>
+                <h3>Proposta Pet Help</h3>
                 <label for='fname'>
-                  <i className='fa fa-user'></i> Full Name
+                 Nome do contratante
                 </label>
                 <input
                   type='text'
                   id='fname'
                   name='firstname'
-                  placeholder='John M. Doe'
+                  placeholder=' '
                 />
                 <label for='email'>
-                  <i className='fa fa-envelope'></i> Email
+                   Email
                 </label>
                 <input
                   type='text'
                   id='email'
                   name='email'
-                  placeholder='john@example.com'
+                  placeholder='email@example.com'
                 />
-                <label for='adr'>
-                  <i className='fa fa-address-card-o'></i> Address
+                <label for='telefone'>
+                   Telefone
                 </label>
                 <input
                   type='text'
-                  id='adr'
-                  name='address'
-                  placeholder='542 W. 15th Street'
+                  id='emtelefoneail'
+                  name='telefone'
+                  placeholder=''
                 />
-                <label for='city'>
-                  <i className='fa fa-institution'></i> City
+                <label for='endereco'>
+                   Endereço
                 </label>
                 <input
                   type='text'
-                  id='city'
-                  name='city'
-                  placeholder='New York'
+                  id='endereco'
+                  name='Endereco'
+                  placeholder=' '
+                />
+                <label for='cidade'>
+                 Cidade
+                </label>
+                <input
+                  type='text'
+                  id='cidade'
+                  name='cidade'
+                  placeholder='Rio de Janeiro'
                 />
 
-                <div className='row' />
+                <div className='row' />      
+                  <label for='estado'>Estado</label>
+                  <input type='text' id='state' name='estado' placeholder='RJ' />            
+                  <label for='cep'>CEP</label>
+                  <input type='text' id='cep' name='cep' placeholder='  ' />               
+              </div>
+
+
+            <div className='col-50'>
+              <h3>Dados do Pet</h3>
+              <label for='especie'>Espécie</label>
+              <select>
+              <option value="Selecione">Selecione</option>
+                <option value="Gato">Gato</option>
+                <option value="Cao">Cão</option>
+              </select>
+              <label for='sexo'>Sexo</label>
+              <select>
+              <option value="Selecione">Selecione</option>
+                <option value="Macho">Fem</option>
+                <option value="Fêmea">Masc</option>
+              </select>
+              <label for='nomepet'>Nome</label>
+              <input
+                type='text'
+                id='nomepet'
+                name='nomepet'
+                placeholder=' '
+              />
+              <div className='row'>
                 <div className='col-50'>
-                  <label for='state'>State</label>
-                  <input type='text' id='state' name='state' placeholder='NY' />
-                </div>
-                <div className='col-50'>
-                  <label for='zip'>Zip</label>
-                  <input type='text' id='zip' name='zip' placeholder='10001' />
+                  <label for='cvv'>Idade</label>
+                  <input type='text' id='idade' name='idade' placeholder='' />
                 </div>
               </div>
             </div>
 
             <div className='col-50'>
-              <h3>Payment</h3>
-              <label for='fname'>Accepted Cards</label>
-              <div className='icon-container'>
-                <i className='fa fa-cc-visa'></i>
-                <i className='fa fa-cc-amex'></i>
-                <i className='fa fa-cc-mastercard'></i>
-                <i className='fa fa-cc-discover'></i>
-              </div>
-              <label for='cname'>Name on Card</label>
+              <h3>Dados de Pagamento</h3>
+              <label for='ccnum'>Número no cartão</label>
               <input
                 type='text'
-                id='cname'
-                name='cardname'
-                placeholder='John More Doe'
+                id='cartaonumero'
+                name='cartaonumero'
+                placeholder=''
               />
-              <label for='ccnum'>Credit card number</label>
+              <label for='nomecartao'>Nome impresso no cartão</label>
               <input
                 type='text'
-                id='ccnum'
-                name='cardnumber'
-                placeholder='1111-2222-3333-4444'
+                id='nomecartao'
+                name='nomecartao'
+                placeholder=' '
               />
-              <label for='expmonth'>Exp Month</label>
+              <label for='expmonth'>Validade</label>
               <input
                 type='text'
-                id='expmonth'
-                name='expmonth'
-                placeholder='September'
+                id='validade'
+                name='validade'
+                placeholder='MM/AA'
               />
               <div className='row'>
                 <div className='col-50'>
-                  <label for='expyear'>Exp Year</label>
-                  <input
-                    type='text'
-                    id='expyear'
-                    name='expyear'
-                    placeholder='2018'
-                  />
-                </div>
-                <div className='col-50'>
                   <label for='cvv'>CVV</label>
-                  <input type='text' id='cvv' name='cvv' placeholder='352' />
+                  <input type='text' id='cvv' name='cvv' placeholder='' />
                 </div>
               </div>
             </div>
-
-            <label>
-              <input type='checkbox' checked='checked' name='sameadr' />{' '}
-              Shipping address same as billing
-            </label>
-            <input type='submit' value='Continue to checkout' className='btn' />
+            <input type='submit' value='Contratar' className='btn' />
           </form>
         </div>
-      </div>
     </div>
   );
 }

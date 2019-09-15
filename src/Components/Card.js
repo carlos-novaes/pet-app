@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ApolicesVendidas from './ApolicesVendidas';
 
 const Card = () => {
   return (
@@ -25,6 +26,7 @@ const Card = () => {
       <NavLink className='contratar' to='/Payment'>
         Contratar
       </NavLink>
+      <ApolicesVendidas />
     </div>
   );
 };
